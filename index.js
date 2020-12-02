@@ -10,14 +10,7 @@
 //   {year: "2016", result: "N/A"}
 // ]
 
-function superbowlWin(array){
-  const winner = array.find(function(element){
-    return element.result === "W"
-  })
-
-  if (winner){
-    return winner.year
-  } else {
-    return winner
-  }
+superbowlWin = (array) => {
+  const winner = array.find(element => element.result === "W")
+  return winner ? winner.year : winner
 }
